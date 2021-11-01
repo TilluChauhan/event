@@ -1,0 +1,21 @@
+.q1{
+	display:flex;
+	
+}
+.q2{
+	flex:1;
+	
+}
+.q3{
+	text-align:right;
+}
+.q3 a{
+	color:#fff;
+}
+
+
+
+
+.lop{
+	margin:13px;
+}

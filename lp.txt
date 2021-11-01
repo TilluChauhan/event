@@ -1,0 +1,42 @@
+cars
+$("select").on("change", function() {
+  var id = $(this).attr("id");
+  alert(id);
+});
+//event call ticket
+		$("#cars").on("change", function() {
+		  var id = $(this).val();
+		  var price="<?php echo $catch['price']?>";
+		var   price=parseInt(price);
+		var Event_price= price*id;
+		var  gst=Event_price*18/100;
+		var total=gst+Event_price;
+		  //var return_price = price.replace('Rs.','');
+		  //return_price =  return_price*id;
+		  //var total_amount = (return_price * 18 / 100) + return_price;
+		  
+		 // $('#event_price').html('Rs.'+return_price);
+		 // $('#total_amount').html(total_amount);
+		  
+		 // console.log(id);
+		  
+		      //alert(id);
+			  console.log(Event_price);
+			   console.log(gst);
+			   console.log(total);
+			 
+		});
+				
+		$('#mop').click(function(){
+			var price="<?php echo $catch['price']?>";
+			var event_id="<?php echo $catch['id']?>";
+			var user_id="<?php echo $user_id?>";
+			var Ticket=Ticket;
+			console.log(Ticket);
+/* 			var option= "<?php echo $op;?>"; */
+			//var option2="<?php echo $opcatch['evntop2']?>";
+			//console.log(option);
+			//console.log(price);
+			//console.log(event_id);
+			//console.log(user_id);
+		});
