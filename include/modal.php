@@ -18,7 +18,7 @@
 
 				  <!-- Modal footer -->
 				  <div class="modal-footer">
-				   <a type="button" id="mop" href="login.php" class="btn btn-danger hj567">Login</a>
+				   <a type="button"  href="login.php" class="btn btn-danger hj567">Login</a>
 				  </div>
 						
 				</div>

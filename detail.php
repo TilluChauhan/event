@@ -239,7 +239,7 @@ include 'admin/config/config.php';
 		<script >
 		
 		
-			$('.owl-carousel').owlCarousel({
+				$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -255,6 +255,7 @@ include 'admin/config/config.php';
         }
     }
 });
+	
 	$(document).ready(function(){
 		//event  
 	$("#cars").change(function(){
@@ -296,7 +297,10 @@ include 'admin/config/config.php';
 			//console.log(ticket);
 			var gst=$('#gst').html();
 			var total=$('#total').html();
-		
+		if(ticket==null){
+			$('#sdg').html('sfd');
+			return false;
+		}
 		
 			//console.log(price);
 

@@ -35,7 +35,7 @@
 	$stcatch=mysqli_query($conn,$psql);
 	//$pcatch=mysqli_fetch_array($catch);
 	//print_r($pcatch);
-	
+
 	
 ?>
 
@@ -53,6 +53,7 @@
 <!--menu-->
 		<?php include 'include/menu.php';?>
 <!--menu-->
+
 		<section>
 			<div class="sec2">
 				<div class="">
@@ -256,8 +257,44 @@
 		<?php include 'include/script.php'?>
 		<!----Script--->
 		<script>
-			
 		
+		
+			$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+});
+		$(document).ready(function(){
+			$('#change').keyup(function(){
+				var input=$(this).val();
+				var data={'T_input':input};
+				$("#searchwrap").html("");
+				$.ajax({
+					type:'POST',
+					url:'admin/ajax/searching.php',
+					data:data,
+					success:function(res){
+						var data = $.parseJSON(res);
+						for(var i = 0; i<data.length; i++){
+							$("#searchwrap").append("<li><a href=detail.php?id=10 class=al>"+data[i].event_name+"</a></li>");
+							//$("#searchwrap").append("<a href=(+data[i].id+)>"+data[i].id+"</a>");
+							//console.log(data);
+						}
+					}
+				});
+			});
+		});
 			
 	
 	</script>	

@@ -5,6 +5,14 @@
 	$resultq=mysqli_query($conn, $sql);
 	//print_r($resultq);
 	}
+	
+
+	$srchingsql="select * from add_event where event_name ";
+	$srchingresult=mysqli_query($conn,$srchingsql);
+	$sf=mysqli_fetch_array($srchingresult);
+		// print_r($sf);
+	//print_r($result);
+	
 	?>
 
 <section class="sec0">
@@ -16,8 +24,16 @@
 								<div class="qq2">
 									<div class="qq4"><i class="fas fa-search"></i></div>
 									<div class="qq3">
-										<input type="text" class="form-control form-control-sm tp" placeholder="Search for movies,Events,Plays,Sports and Activities" name="">
+										<input data-toggle="collapse" data-target="#demo11"  type="text" id="change" class="form-control form-control-sm tp" placeholder="Search for movies,Events,Plays,Sports and Activities" name="">
+										<div id="demo11" class="collapse log1">
+										<div id="tus" class=" log">
+											<ul id="searchwrap" >
+											
+											</ul>
+											</div>
+										</div>
 									</div>
+	
 								</div>
 							</div>
 						</div>

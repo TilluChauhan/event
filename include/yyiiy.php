@@ -9,4 +9,4 @@
 											<?php
 										}
 										?>	
-											
+											<div class="log" rows="5">dhxdfh</div>
