@@ -260,21 +260,24 @@
 		
 		
 			$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:2
-        }
-    }
-});
+				loop:true,
+				margin:10,
+				nav:true,
+				autoWidth:true,
+				autoPlay:true,
+				stagePadding:100,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:1
+					},
+					1000:{
+						items:2
+					}
+				}
+			});
 		$(document).ready(function(){
 			$('#change').keyup(function(){
 				var input=$(this).val();
@@ -287,7 +290,7 @@
 					success:function(res){
 						var data = $.parseJSON(res);
 						for(var i = 0; i<data.length; i++){
-							$("#searchwrap").append("<li><a href=detail.php?id=<?php ?> class=al>"+data[i].event_name+"</a></li>");
+							$("#searchwrap").append("<li><a href=detail.php?id="+data[i].id+" class=al>"+data[i].event_name+"</a></li>");
 							//$("#searchwrap").append("<a href=(+data[i].id+)>"+data[i].id+"</a>");
 							//console.log(data);
 						}
