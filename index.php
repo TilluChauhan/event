@@ -287,7 +287,7 @@
 					success:function(res){
 						var data = $.parseJSON(res);
 						for(var i = 0; i<data.length; i++){
-							$("#searchwrap").append("<li><a href=detail.php?id=10 class=al>"+data[i].event_name+"</a></li>");
+							$("#searchwrap").append("<li><a href=detail.php?id=<?php ?> class=al>"+data[i].event_name+"</a></li>");
 							//$("#searchwrap").append("<a href=(+data[i].id+)>"+data[i].id+"</a>");
 							//console.log(data);
 						}

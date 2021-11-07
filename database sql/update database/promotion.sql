@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 07, 2021 at 10:17 AM
+-- Generation Time: Nov 07, 2021 at 10:28 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -41,7 +41,7 @@ CREATE TABLE `promotion` (
 INSERT INTO `promotion` (`id`, `name`, `image`, `url`) VALUES
 (1, 'Jo Bolta Hai Wohi Hota Hai Feat Harsh Gujral', 'pic54.jpg', 'http://localhost/Event/detail.php?id=1'),
 (2, 'Curtain Call Exclusives', 'pic269.jpg', 'http://localhost/Event/detail.php?id=3'),
-(3, 'Digital Marketing & Communication 3', 'pic160.jpg', 'Event/detail.php?id=1');
+(3, 'Digital Marketing & Communication 3', 'pic160.jpg', 'http://localhost/Event/detail.php?id=3');
 
 --
 -- Indexes for dumped tables
